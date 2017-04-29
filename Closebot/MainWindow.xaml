@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Closebot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Closebot" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnStart_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnStop_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="170,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnUpdate_Click"/>
+        <Label Content="Last tick:" HorizontalAlignment="Left" Margin="256,8,0,0" VerticalAlignment="Top" Foreground="#FF026AE6"/>
+        <Label x:Name="lblLastTick" Content="DateTime" HorizontalAlignment="Left" Margin="311,8,0,0" VerticalAlignment="Top" Foreground="#FF00AE00" Width="223"/>
+        <Label x:Name="lblRetry" Content="Retry in Effect" HorizontalAlignment="Left" Margin="265,32,0,0" VerticalAlignment="Top" Foreground="Red" Background="#FFE5D80E" FontWeight="Bold" Visibility="Hidden"/>
+        <Label Content="Close Date:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <Label x:Name="lblCloseDate" Content="Label" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="125"/>
+        <Label Content="Last Close:" HorizontalAlignment="Left" Margin="256,50,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <Label x:Name="lblLastClose" Content="Label" HorizontalAlignment="Left" Margin="331,50,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="125"/>
+        <Label Content="DJIA:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <Label x:Name="lblDJIA" Content="Label" HorizontalAlignment="Left" Margin="90,76,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="350"/>
+        <Label Content="SPX:" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <Label x:Name="lblSPX" Content="Label" HorizontalAlignment="Left" Margin="90,102,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="350"/>
+        <Label Content="NASDAQ:" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <Label x:Name="lblNASDAQ" Content="Label" HorizontalAlignment="Left" Margin="90,128,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="350"/>
+        <Label Content="Tweet:" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <TextBlock x:Name="tbTweet" HorizontalAlignment="Left" Margin="95,180,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="345" Height="70" Foreground="#FF805ED8"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="75"/>
+        <TextBlock x:Name="tbStatus" HorizontalAlignment="Left" Margin="95,255,0,0" VerticalAlignment="Top" Width="350" Height="56" TextWrapping="Wrap"/>
     </Grid>
 </Window>
